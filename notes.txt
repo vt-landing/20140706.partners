@@ -1,0 +1,23 @@
+Notes
+  $ git add `git status | grep modified | sed 's/\(.*modified:\s*\)//'`
+
+Github Pages
+    https://pages.github.com
+    https://help.github.com/categories/20/articles
+        Creating Pages with the automatic generator
+            http://vt-landing.github.io/20140706.partners
+          After your GitHub Pages site is generated, you can get a local copy of its HTML code. If you generated a Project Pages site, fetch and check out the new branch:
+                $ cd repository
+                $ git fetch origin
+                $ git checkout gh-pages
+        Add content and push
+          In order to trigger a build when you push to your Page's repository, you must first verify your email address.
+          Now you have an empty working directory. You can create some content in this branch and push it to GitHub. For example:
+                $ echo "My GitHub Page" > index.html
+                $ git add index.html
+                $ git commit -a -m "First pages commit"
+                $ git push origin gh-pages
+
+Bootstrap Templates
+    http://bootstrapzero.com/bootstrap-template/the-firm
+    http://bootstrapzero.com/bootstrap-template/happy-scroll
