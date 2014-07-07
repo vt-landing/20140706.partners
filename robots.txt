@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /testdir/
+
+User-agent: *
+Disallow: /*.txt$

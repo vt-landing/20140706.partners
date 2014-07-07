@@ -21,3 +21,28 @@ Github Pages
 Bootstrap Templates
     http://bootstrapzero.com/bootstrap-template/the-firm
     http://bootstrapzero.com/bootstrap-template/happy-scroll
+
+Pages:
+    1. index.html
+        Home:
+        Project:
+        Updates:
+        Features:
+        Volunteer:
+        Screenshots:
+        Contact Us:
+    2. forms:
+        a. contact us 
+        b. get involved
+        c. mailing list form
+            Add google analytics event
+    3. robots.txt
+        https://support.google.com/webmasters/answer/156449
+
+Content
+    target audience:
+        initially -> page to send interest people i interact with personally until development roadmap clarified
+        medium term ->
+            1. develop leads to add partners to the platform
+            2. attract volunteers to the project
+            3. build newsletter/mailing list
