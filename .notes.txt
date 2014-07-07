@@ -22,15 +22,44 @@ Bootstrap Templates
     http://bootstrapzero.com/bootstrap-template/the-firm
     http://bootstrapzero.com/bootstrap-template/happy-scroll
 
+Flickr Photo Search
+    https://www.flickr.com/services/api/explore/flickr.photos.search
+        if 9892676105_321b405f17_b.jpg
+            [98..==photo_id]_[32...==mystery]_[b==size].jpg
+        flickr.com/photos/[owner_id]/[photo_id]
+            how do you get the owner_id?
+
 Pages:
     1. index.html
         Home:
         Project:
+            Project VT
+            A community based bible studies platform.
+            Soon to be launched, Project VT is a learning platform to help the religious intellectual take rich bible studies courses online.
+            The goal of this project is to better connect people with their form of faith, and be a beacon of learning, tolerance, and community. This project intents to partner with the religious institutions arround the world, and adapt their bible study programs into massively open online courses.
         Updates:
+            Sign up for to the newsletter.
+                email
         Features:
-        Volunteer:
-        Screenshots:
+            Next generation personalized learning technology.
+            Complete at your own pace anywhere with the internet.
+            International voices.
+        Join Us:
+            If you support the goal of this project, we can always use another helping hand. From part-time, full-time, translaters, educators, fund raisers, donations. Send a note on how you can make a difference.
+                name
+                email
+                subject
+                message
+        Prototype:
+            video
+            questions
+            progress
         Contact Us:
+            Let us know what you think
+                name
+                email
+                subject
+                message
     2. forms:
         a. contact us 
         b. get involved

@@ -40,7 +40,6 @@ function initialize() {
         scrollwheel: false
     };
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
     if (geocoder) {
         geocoder.geocode({
             'address': address
@@ -48,19 +47,16 @@ function initialize() {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
                     map.setCenter(results[0].geometry.location);
-
                     var infowindow = new google.maps.InfoWindow({
                         content: address,
                         map: map,
                         position: results[0].geometry.location,
                     });
-
                     var marker = new google.maps.Marker({
                         position: results[0].geometry.location,
                         map: map,
                         title: address
                     });
-
                 } else {
                     alert("No results found");
                 }
