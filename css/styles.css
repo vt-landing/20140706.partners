@@ -145,3 +145,11 @@ section {
   padding:20px;
   background-color:rgba(5,5,5,.8);
 }
+.fa-unicode-large {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200px;
+  display: block;
+  text-align: center;
+}

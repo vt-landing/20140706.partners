@@ -42,8 +42,13 @@ Pages:
                 email
         Features:
             Next generation personalized learning technology.
+                fa-laptop [&#xf109;]
             Complete at your own pace anywhere with the internet.
-            International voices.
+                fa-clock-o [&#xf017;]
+            Community content from around the world.
+                fa-globe [&#xf0ac;]
+                Font-Awesome Cheatsheet
+                    http://fortawesome.github.io/Font-Awesome/cheatsheet/
         Join Us:
             If you support the goal of this project, we can always use another helping hand. From part-time, full-time, translaters, educators, fund raisers, donations. Send a note on how you can make a difference.
                 name
