@@ -116,19 +116,6 @@ h1 {
   margin: 0;
   padding: 15px;
 }
-.scroll-top {
-  position:fixed;
-  bottom:0;
-  right:6%;
-  z-index:100;
-  background: #ffcc33;
-  font-size:24px;
-  border-top-left-radius:3px;
-  border-top-right-radius:3px;
-}
-.scroll-top a:link, .scroll-top a:visited {
-  color:#222;
-}
 section {
   color: #ffffff;
   min-height: 400px;
@@ -147,6 +134,7 @@ section {
 .bg-text {
   padding:20px;
   background-color:rgba(5,5,5,.8);
+  border-radius: 20px;
 }
 .fa-unicode-large {
   font-family: FontAwesome;
