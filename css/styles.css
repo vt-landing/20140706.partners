@@ -99,6 +99,9 @@ h1 {
 .divider {
   height:20px;
 }
+.precover {
+  margin-top: 40px;
+}
 .panel {
   border-width:0;
 }
