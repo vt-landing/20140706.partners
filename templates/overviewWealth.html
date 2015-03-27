@@ -1,0 +1,65 @@
+<ion-view title="Uncovered Overview">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content class="has-header">
+        <div class="item item-positive" ng-class="[moneyTransferClass]" ng-show="moneyTransferClass"><!-- style="color:red" -->
+            Item Assets <i class="ion-arrow-right-c"></i> Savings
+            <span class="item-note" style="color:white;"> $200</span>
+        </div>
+        <div class="item item-divider" style="padding-left:0;">
+            <div class="row" style="padding-left:0;">
+                <div class="col" style="padding-left:0;"><img style="width:200px" src="img/piechart.png" ng-click="toggleMoneyTransfer()"></div>
+                <div class="col-30" style="padding:0; margin:0;">
+                            <div class="item item-divider item-dark">This Week</div>
+                            <a class="item">
+                                Savings
+                                <span class="item-note" style="color:green" ng-class="[moneyAmountClass]">+ ${{200+moneyTransferred}}</span>
+                            </a>
+                            <a class="item">
+                                Bonds
+                                <span class="item-note" style="color:red">- $200</span>
+                            </a>
+                            <a class="item">
+                                Item Assets
+                                <span class="item-note" style="color:green" ng-class="[moneyAmountClass]">+ ${{300 -moneyTransferred}}</span>
+                            </a>
+                            <a class="item">
+                                Family Time<span>&nbsp;&nbsp;&nbsp;</span>
+                                <span class="item-note" style="color:green">+ 10 hours</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST: THIS WEEK -->
+
+
+        <!-- LIST: OVERALL -->
+            <div class="item item-divider item-dark">Overview</div>
+            <a class="item"><i class="ion-social-usd"></i>
+                &nbsp; Savings
+                <span class="item-note" style="color:black">${{20000+moneyTransferred}}</span>
+            </a>
+            <a class="item"><i class="ion-connection-bars"></i>
+                &nbsp; Bonds
+                <span class="item-note" style="color:black">$3000</span>
+            </a>
+            <a class="item" ui-sref="app.myItems"><i class="ion-bag"></i>
+                &nbsp; Item Assets
+                <span class="item-note" style="color:blue">${{10000-moneyTransferred}}</span>
+            </a>
+            <a class="item" ui-sref="app.familyTime"><i class="ion-heart"></i>
+                &nbsp; Family Time
+                <span class="item-note" style="color:black">806 hours</span>
+            </a>
+            <a class="item item-divider">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Total</strong>
+                <span class="item-note" style="color:black">$33,000 <span style="color:green;">+ 806 hrs</span></span>
+            </a>
+            
+    </ion-content>
+</ion-view>

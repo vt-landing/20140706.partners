@@ -1,0 +1,26 @@
+<ion-view title="virtualInvestment" id="virtualInvestment">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-tabs class="tabs-icon-top tabs-background-dark-and-red tabs-color-light-and-red">
+        <!-- Map Tab View -->
+        <ion-tab title="Portfolio" icon="icon ion-map" ui-sref="app.virtualInvestment.portfolio">
+            <ion-nav-view name="tab-portfolio"></ion-nav-view>
+        </ion-tab>
+        <!-- Card Tab View -->
+        <ion-tab title="Trade" icon="icon ion-ios-browsers" ui-sref="app.virtualInvestment.trade">
+            <ion-nav-view name="tab-trade"></ion-nav-view>
+        </ion-tab>
+        <!-- List Tab View -->
+        <ion-tab title="Compete" icon="icon ion-ios-paper" ui-sref="app.virtualInvestment.compete">
+            <ion-nav-view name="tab-complete"></ion-nav-view>
+        </ion-tab>
+        <!-- List Tab View -->
+        <ion-tab title="Learn" icon="icon ion-ios-paper" ui-sref="app.virtualInvestment.learn">
+            <ion-nav-view name="tab-learn"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

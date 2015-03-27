@@ -1,0 +1,43 @@
+<ion-view title="Item Sold" id="itemSold">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="myGoBack()">
+                <i class="ion-ios-arrow-back"></i> Back
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content class="itemSoldBody has-header padding" scroll="false">
+        <div class="list card">
+            <div class="item item-image">
+                <img src="{{ item.imgUrl }}" class="item-image-img" />
+            </div>
+        </div>
+        <div>
+            <img src="img/soldStamp.png" class="soldStamp" />
+        </div>
+        <div class="list list-inset">
+            <div class="item item-positive">
+                Send to
+            </div>
+            <div class="item">
+                100 Cyberport Road<br/>
+                Pok Lum Fu, Hong Kong
+            </div>
+        </div>
+        <div class="soldBanner">
+            <div class="list">
+                <a class="item item-avatar item-dark" href="#">
+                    <img src="img/paylah.png">
+                    <h2 style="color:white; font-weight: bold">{{ item.price }}</h2>
+                    <p style="color:rgb(200,200,200);">Credited to your Paylah account.</p>
+                </a>
+            </div>
+        </div>
+        <!--
+        <div class="soldBanner">
+            <img src="img/section01-banner.jpg" class="soldBannerImg" />
+        </div>
+        -->
+    </ion-content>
+</ion-view>

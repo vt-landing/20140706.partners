@@ -1,0 +1,77 @@
+<ion-view title="Family Time" id="familyTime">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+            <button class="button button-positive" ng-click="">Add Moment</button>
+        </ion-nav-buttons>
+        
+    </ion-nav-bar>
+
+    <style>
+    .progress-bar {
+      width: 60%;
+      height: 20px;
+      background: #F5F9FC;
+      position: relative;
+      /*bottom: 44px;*/
+      z-index: 12; }
+    .increment {
+      padding-left:15%; color:black;
+      width: 5%;
+      height: 100%;
+      background: #017AFD;
+      transition: all .75s;}
+    .ion-clock{
+        font-size:30px;
+    }
+    </style>
+
+    <ion-content class="familyTimeBody has-header">
+        <div class="item item-energized" ng-class="[notificationClass]" ng-show="notificationClass" style="color:black"><!-- style="color:red" -->
+            <i class="ion-alert-circled"></i> &nbsp;Spend more time with your family.
+        </div>
+
+        <div class="item">
+            <img src="img/chart-bill-average.png" ng-click="toggleNotification();">
+        </div>
+        <div class="item item-divider item-dark">
+            Overview
+        </div>
+        <div class="item">
+            This Week <span class="item-note" style="color:black"><span id="familyTime">2</span>/10 hours</span>
+        </div>
+
+
+
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Husband</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:60%;">1hr 10min</div>
+                </div>
+                <span class="item-note" style="color:black"><i class="ion-clock addTime"></i> </span>
+                
+        </div>
+
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Daughter</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:20%" ng-style="pbStyleVar">{{progressNum}}min</div>
+                </div>
+                <span class="item-note" style="color:black;"><i class="ion-clock addTime" ng-click="toggleProgressBar()" ng-style="clockStyleVar"></i> </span>
+        </div>
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Parents</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:2%;">10min</div>
+                </div>
+                <span class="item-note" style="color:black"><i class="ion-clock addTime"></i> </span>
+        </div>
+
+        <div class="item item-divider item-dark">Family Moments</div>
+        <div class="item"><img src="img/family-photo-stream.png" style="width:100%"></div>
+
+    </ion-content>
+</ion-view>

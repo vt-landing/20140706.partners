@@ -1,316 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Trendicity</title>
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <title>Project VT - Teaser</title>
-  <meta name="generator" content="Bootply" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Arvo:400,700,400italic,700italic|Oxygen:300,400,700|Gentium+Basic:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Crimson+Text:400,400italic,700,700italic,600italic,600&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-  <link href="css/font-awesome-4.1.0/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap-3.2.0/bootstrap.min.css" rel="stylesheet">
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href="css/styles.css" rel="stylesheet">
-</head>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Oswald:400,700,300|Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>
 
-<body>
-  <!-- Wrap all page content here -->
-  <div id="wrap">
-  
-    <header class="masthead">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h1><a href="#" title="Bootstrap Template">Project VT</a>
-              <p class="lead">A community based bible studies platform.</p>
-            </h1>
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav nav-justified">
-            <li><a href="#wrap">Home</a></li>
-            <li class="active"><a href="#project">Project</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#joinus">Join Us</a></li>
-            <li><a href="#prototype">Prototype</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-      <!--/.container -->
-    </div>
-    <!--/.navbar -->
+    <!-- vendor css -->
+    <link href="lib/ionic-contrib-tinder-cards/ionic.tdcards.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/animate.css">
 
-    <!-- Begin page content -->
-    <div class="divider" id="project"></div>
-    <div class="container">
-      <div class="col-sm-10 col-sm-offset-1">
-        <div class="text-center">
-          <h1 class="page-header">Project VT</h1>
-        </div>
-        <p class="lead text-center">
-          A community based bible studies platform.
-        </p>
-        <p class="text-center">
-          Soon to be launched, Project VT is a learning platform to help the religious intellectual take rich bible studies courses online.
-          The goal of this project is to better connect people with their form of faith, and be a beacon of learning, tolerance, and community. This project intents to partner with the religious institutions arround the world, and adapt their bible study programs into massively open online courses.
-        </p>
-      </div>
-    </div>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <div class="precover"></div>
-    <section class="bg-cover" style="background-image:url('images/vt.flickr.2767928022_0e06cef49f_o.jpg')">
-      <div class="col-sm-6 col-sm-offset-3 text-center">
-        <h2 class="bg-text">Tolerance</h2>
-      </div>
-    </section>
+    <!-- vendor js -->
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/collide/collide.js"></script>
+    <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="lib/ionic-contrib-tinder-cards/ionic.tdcards.js"></script>
+    <script src="lib/ionic-contrib-icon/ionic.icon.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/angular-http-auth/src/http-auth-interceptor.js"></script>
+    <script src="lib/lodash/lodash.min.js"></script>
+    <script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
-    <div class="divider" id="newsletter"></div>
-    <div class="container">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
-        <h3>Sign up for to the newsletter.</h3>
-        <br />
-        <form action="https://docs.google.com/forms/d/1cBmuwXrKdJzQdE2Zrkup5OG8M2TeaVUEteDJ7KkxI7g/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-          <div class="col-sm-7">
-            <div class="form-group">
-              <input name="entry.52013321" value="" class="form-control ss-q-short" id="entry_52013321" dir="auto" aria-label="Email Address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" type="email" placeholder="Enter email">
-              <input name="draftResponse" value="[,,&quot;7706799426155796965&quot;]" type="hidden">
-              <input name="pageHistory" value="0" type="hidden">
-              <input name="fbzx" value="7706799426155796965" type="hidden">
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <button name="submit" value="Submit" id="ss-submit" class="btn btn-primary">Sign Up</button>
-          </div>
-        </form>
-      </div>
-      <!--/col-->
-    </div>
-    <!--/container-->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
 
-    <div class="precover"></div>
-    <section class="bg-cover" style="background-image:url('images/vt.flickr.3928252631_49497c2e84_b.jpg')">
-      <div class="col-sm-6 col-sm-offset-3 text-center">
-        <h2 class="bg-text">Community</h2>
-      </div>
-    </section>
+    <!-- your app's js -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/app.js"></script>
 
-    <div class="divider" id="features"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="page-header">Features</h2>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div class="panel-thumbnail">
-              <img src="images/vt.feature.1.png" class="img-responsive">
-            </div>
-            <div class="panel-body text-center">
-              <p class="lead">Next generation personalized learning technology.</p>
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div class="panel-thumbnail">
-              <img src="images/vt.feature.2.png" class="img-responsive">
-            </div>
-            <div class="panel-body text-center">
-              <p class="lead">Flexible schedules, complete courses at your own pace.</p>
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div class="panel-thumbnail">
-              <img src="images/vt.feature.3.png" class="img-responsive">
-            </div>
-            <div class="panel-body text-center">
-              <p class="lead">Access courses anywhere with that has internet access.</p>
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-      </div>
-      <!--/row-->
-    </div>
-    <!--/container-->
+    <script src="js/controllers/splash.js"></script>
+    <script src="js/controllers/uncoverJessica.js"></script>
+      <script src="js/controllers/overviewWealth.js"></script>
+      <script src="js/controllers/hiddenWealth.js"></script>
+      <script src="js/controllers/familyTime.js"></script>
+      <script src="js/controllers/myItems.js"></script>
+      <script src="js/controllers/itemDetails.js"></script>
+      <script src="js/controllers/itemSold.js"></script>
+      <script src="js/controllers/itemList2.js"></script>
 
-    <div class="precover"></div>
-    <section class="bg-cover" style="background-image:url('images/vt.flickr.9892676105_321b405f17_b.jpg')">
-      <div class="col-sm-6 col-sm-offset-3 text-center">
-        <h2 class="bg-text">Learning</h2>
-      </div>
-    </section>
+    <script src="js/controllers/virtualInvestment.js"></script>
+    <script src="js/controllers/viPortfolio.js"></script>
+    <script src="js/controllers/viTrade.js"></script>
+    <script src="js/controllers/viCompete.js"></script>
+    <script src="js/controllers/viLearn.js"></script>
 
-    <div class="divider" id="joinus"></div>
-    <div class="container">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
-        <h1>Join Us</h1>
-        <p>
-          If you support the goal of this project, we can always use another helping hand. From part-time, full-time, translators, educators, fund raisers, group leaders, developers, or donations. <a class="btn btn-link" data-toggle="modal" data-target="#joinUsModal">Send a note.</a>
-        </p>
-      </div>
-      <!--/col-->
-    </div>
-    <!--/container-->
+    <script src="js/controllers/intro.js"></script>
+    <script src="js/controllers/favorites.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/map.js"></script>
+    <script src="js/controllers/card.js"></script>
+    <script src="js/controllers/list.js"></script>
+    <script src="js/services/instagram.js"></script>
+    <script src="js/services/posts.js"></script>
+    <script src="js/services/favorites.js"></script>
+    <script src="js/services/interceptors.js"></script>
+    <script src="js/services/geolocation.js"></script>
+    <script src="js/directives/on-dbl-tap.js"></script>
+    <script src="js/directives/add-favorite-form.js"></script>
+  </head>
 
-    <div class="precover"></div>
-    <section class="bg-cover" style="background-image:url('images/vt.flickr.7580271832_454d1a587f_k.jpg')">
-      <div class="col-sm-6 col-sm-offset-3 text-center">
-        <h2 class="bg-text">International</h2>
-      </div>
-    </section>
-
-    <div class="divider" id="prototype"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="page-header">Prototype</h2>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div>
-              <img src="images/vt.edx.3.png" class="img-responsive">
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div class="panel-thumbnail">
-              <img src="images/vt.edx.2.png" class="img-responsive">
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-        <div class="col-sm-4 col-xs-6">
-          <div class="panel panel-default">
-            <div class="panel-thumbnail">
-              <img src="images/vt.edx.1.png" class="img-responsive">
-            </div>
-          </div>
-          <!--/panel-->
-        </div>
-        <!--/col-->
-      </div>
-      <!--/row-->
-    </div>
-    <!--/container-->
-
-    <div class="precover"></div>
-    <div class="row">
-      <div id="map-canvas"></div>
-    </div>
-
-    <div class="divider" id="contactus"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-10 text-center">
-          <h2 class="page-header">Let us know what you think</h2>
-        </div>
-        <div class="col-sm-8 col-sm-offset-1">
-          <form action="https://docs.google.com/forms/d/19fw-A5PqngKRtZGDB4I7Fj0T0-JloKatj3vT16fh31k/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-            <div class="row form-group">
-              <div class="col-xs-4">
-                <input name="entry.1844829046" value="" class="form-control ss-q-short" id="entry_1844829046" dir="auto" aria-label="Name  " aria-required="true" required="" title="" type="text" placeholder="name">
-              </div>
-              <div class="col-xs-4">
-                <input name="entry.178927325" value="" class="form-control ss-q-short" id="entry_178927325" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" type="email" placeholder="email">
-              </div>
-              <div class="col-xs-4">
-                <input name="entry.1149315386" value="" class="form-control ss-q-short" id="entry_1149315386" dir="auto" aria-label="Subject  " aria-required="true" required="" title="" type="text" placeholder="subject">
-              </div>
-            </div>
-            <div class="row form-group">
-              <div class="col-xs-12">
-                <textarea name="entry.1759028466" class="form-control ss-q-long" id="entry_1759028466" dir="auto" aria-label="Message  " aria-required="true" required="" placeholder="message"></textarea>
-              </div>
-            </div>
-            <div class="row form-group">
-              <div class="col-xs-10">
-                <button name="submit" value="Send" id="ss-submit" type="submit" class="btn btn-primary pull-right">Send</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-xs-12 col-sm-3 pull-right">
-          <address>
-            Headquarters
-            <br /><span id="map-input">Cyberport 2,
-            <br />100 Cyberport Road,
-            <br />Hong Kong</span>
-          </address>
-        </div>
-      </div>
-      <!--/row-->
-    </div>
-    <!--/container-->
-  </div>
-  <!--/wrap-->
-
-  <div id="footer">
-    <div class="container">
-      <p class="text-muted">More details coming soon</p>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">Project VT</h4>
-        </div>
-        <div class="modal-body">
-          <iframe src="https://docs.google.com/forms/d/1uT7KAZyj9uY71OdcKSWAOzpaGTi-olXnkcnS9mLEDe4/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- script references -->
-  <script src="js/jquery-1.11.1/jquery.min.js"></script>
-  <script src="js/bootstrap-3.2.0/bootstrap.min.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
-  <script src="js/scripts.js"></script>
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-52562192-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
-</body>
+  <body ng-app="WealthExplorer">
+    <ion-nav-view></ion-nav-view>
+  </body>
 
 </html>

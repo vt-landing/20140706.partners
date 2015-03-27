@@ -1,0 +1,30 @@
+<ion-view title="My Items" id="myItems">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content class="myItemsBody has-header" scroll="true">
+        <div class="list">
+            <div class="item item-divider item-balanced">
+                Recently Sold
+            </div>
+            <a class="item item-thumbnail-left" href="#" ng-repeat="item in recentlySoldItems">
+                <img ng-src="{{ item.imgUrl }}" class="item-image-img">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.price }}</p>
+            </a>
+        </div>
+        <div class="list">
+            <div class="item item-divider item-dark">
+                Current Items
+            </div>
+            <a class="item item-thumbnail-left" href="#" ng-repeat="item in currentItems" ng-click="showdetails(item)">
+                <img ng-src="{{ item.imgUrl }}" class="item-image-img">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.price }}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
